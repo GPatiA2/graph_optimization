@@ -1,0 +1,40 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/cvar/graph_optimization/Graph_optimization_example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cvar/anaconda3/bin/ninja cmTC_2b1f1 && [1/2] Building C object CMakeFiles/cmTC_2b1f1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2b1f1
+FAILED: cmTC_2b1f1 
+: && /usr/bin/gcc-12 -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_2b1f1.dir/CheckFunctionExists.c.o -o cmTC_2b1f1   && :
+/usr/bin/ld: CMakeFiles/cmTC_2b1f1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/cvar/graph_optimization/Graph_optimization_example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cvar/anaconda3/bin/ninja cmTC_25fc6 && [1/2] Building C object CMakeFiles/cmTC_25fc6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_25fc6
+FAILED: cmTC_25fc6 
+: && /usr/bin/gcc-12 -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_25fc6.dir/CheckFunctionExists.c.o -o cmTC_25fc6  /usr/lib/x86_64-linux-gnu/libblas.so  /usr/lib/x86_64-linux-gnu/libf77blas.so  /usr/lib/x86_64-linux-gnu/libatlas.so  -lm  -ldl && :
+/usr/bin/ld: CMakeFiles/cmTC_25fc6.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/cvar/graph_optimization/Graph_optimization_example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/cvar/anaconda3/bin/ninja cmTC_fe6c0 && [1/2] Building C object CMakeFiles/cmTC_fe6c0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_fe6c0
+FAILED: cmTC_fe6c0 
+: && /usr/bin/gcc-12 -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_fe6c0.dir/CheckFunctionExists.c.o -o cmTC_fe6c0  /usr/lib/x86_64-linux-gnu/liblapack.so  /usr/lib/x86_64-linux-gnu/libblas.so  /usr/lib/x86_64-linux-gnu/libf77blas.so  /usr/lib/x86_64-linux-gnu/libatlas.so  -fortranlibs && :
+gcc-12: error: unrecognized command-line option ‘-fortranlibs’
+ninja: build stopped: subcommand failed.
+
+
+
